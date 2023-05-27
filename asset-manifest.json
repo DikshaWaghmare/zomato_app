@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/zomato_app/static/css/main.073c9b0a.css",
+    "main.js": "/zomato_app/static/js/main.1d2c91ba.js",
+    "static/js/787.cdfcc663.chunk.js": "/zomato_app/static/js/787.cdfcc663.chunk.js",
+    "static/media/food.jpg": "/zomato_app/static/media/food.8415391725ea2e2b649e.jpg",
+    "static/media/burger.webp": "/zomato_app/static/media/burger.2f2dcfdc03e1a51a8f10.webp",
+    "static/media/misalpav.jpg": "/zomato_app/static/media/misalpav.1667372d75b7bffdc642.jpg",
+    "static/media/noodles.jpg": "/zomato_app/static/media/noodles.26923cc48a22617dda04.jpg",
+    "index.html": "/zomato_app/index.html",
+    "main.073c9b0a.css.map": "/zomato_app/static/css/main.073c9b0a.css.map",
+    "main.1d2c91ba.js.map": "/zomato_app/static/js/main.1d2c91ba.js.map",
+    "787.cdfcc663.chunk.js.map": "/zomato_app/static/js/787.cdfcc663.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.1d2c91ba.js"
+  ]
+}
