@@ -22,7 +22,7 @@ const OrderData1 = () => {
           <div className="text-end my-3 me-5">
             <button className="me-5"><Link type="but" to="/menuTable" className="text-black " style={{ textDecoration: "None" }}>Menu Table</Link></button>
 
-            <button className="me-5"><Link type="but" to="/" className="text-black" style={{ textDecoration: "None" }}>Back</Link></button>
+            <button className="me-5"><Link type="but" to="/zomato_app" className="text-black" style={{ textDecoration: "None" }}>Back</Link></button>
 
           </div>
 

@@ -7,10 +7,9 @@ import OrderData2 from './components/MenuTable';
 function App() {
   return (
     <>
-    {/* <Home></Home> */}
     <Link to="/"></Link>
     <Routes>
-      <Route path="/" element={<Home/>}></Route>
+      <Route path="/zomato_app" element={<Home/>}></Route>
       <Route path="/orderdata" element={<OrderData/>}></Route>
       <Route path="/menuTable" element={<OrderData2/>}></Route>
     </Routes>

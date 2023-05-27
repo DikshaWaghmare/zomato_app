@@ -8,7 +8,6 @@ function Home() {
     return (
         <>
             <Navbar />
-            {/* ---------------------------------carousal------------------------------------------- */}
 
             <div className='container mt-3'>
                 <div id="carouselExampleCaptions" class="carousel slide" style={{ height: "450px", borderRadius: "10px" }}>
