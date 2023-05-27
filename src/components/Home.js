@@ -3,8 +3,20 @@ import img2 from '../assest/Images/misalpav.jpg';
 import img3 from '../assest/Images/food.jpg';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
+import Data from "./Data";
+import MenuCards from "./MenuCards";
+import Buttons from "./filterButtons";
 function Home() {
+    const [item, setItem] = useState(Data);
+    const menuItems = [...new Set(Data.map((Val) => Val.category))];
+    const filterItem = (categoryData) => {
+        const newItem = Data.filter((newVal) => {
+            return newVal.category === categoryData;
+        });
+        setItem(newItem);
+    };
     return (
         <>
             <Navbar />
@@ -43,7 +55,7 @@ function Home() {
                     <h3>Get Special Food</h3>
                 </div>
                 <div className="d-flex flex-wrap my-3 justify-content-evenly">
-                    
+
                     <div className=" border border-1 border-dark rounded-4 "
                         style={{ height: "350px", width: "300px", backgroundImage: "linear-gradient(to bottom right, rgb(549, 249, 141), rgb(169, 245, 236))" }}>
                         <div className="text-center ">
@@ -145,6 +157,22 @@ function Home() {
                             <button className='btn btn-outline-primary'><Link to="/orderdata" style={{ textDecoration: "none" }}>Order Now</Link></button>
                         </div>
                     </div>
+
+                </div>
+            </div>
+
+            <div className="container-fluid" id="order">
+                <div className="row">
+                    <h1 className="col-12 text-center mb-3 mt-3 fw-bold">Order Now🍩</h1>
+                    <div className="text-end my-3 me-5">
+                        <button className="me-5"><Link type="but" to="/menuTable" className="text-black " style={{ textDecoration: "None" }}>Menu Table</Link></button>
+
+                        <button className="me-5"><Link type="but" to="#" className="text-black" style={{ textDecoration: "None" }}>Back</Link></button>
+
+                    </div>
+
+                    <Buttons filterItem={filterItem} setItem={setItem} menuItems={menuItems} />
+                    <MenuCards item={item} />
 
                 </div>
             </div>

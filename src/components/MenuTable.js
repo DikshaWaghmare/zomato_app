@@ -23,7 +23,7 @@ const OrderData2 = () => {
                     <h1 className="col-12 text-center my-3 fw-bold">Order Data</h1>
                     <hr></hr>
                     <div className="text-end my-3 me-5">
-                        <button><Link type="but" to="/orderdata" className="text-black" style={{ textDecoration: "None" }}>Back</Link></button>
+                        <button><Link type="but" to="/zomato_app" className="text-black" style={{ textDecoration: "None" }}>Back</Link></button>
                     </div>
                     <table className=" table mx-auto border border-dark  bg-light shadow-sm" style={{ width: "50%" }}>
                         <thead className="table ">
